@@ -1,0 +1,80 @@
+.conversation-box {
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid #d4a574;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.conversation-box.empty {
+  background: rgba(255, 255, 255, 0.5);
+  border-style: dashed;
+  text-align: center;
+}
+
+.silence-text {
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+.conversation-box.consequence {
+  background: rgba(255, 235, 205, 0.95);
+  border-color: #ff6b35;
+}
+
+.speaker-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dialogue-text {
+  font-size: 1.1rem;
+  color: #2a2a2a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consequence-indicator {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.typing-dots {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  background: #ff6b35;
+  border-radius: 50%;
+  animation: typing 1.4s infinite;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
