@@ -205,11 +205,36 @@ Built with:
 - [Vite](https://vite.dev/)
 - [Framer Motion](https://www.framer.com/motion/)
 
+## 🚀 Deployment
+
+### GitHub Pages Setup
+
+The project is configured for automatic deployment to GitHub Pages via GitHub Actions.
+
+**To enable GitHub Pages:**
+
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under "Build and deployment":
+   - Source: Select **GitHub Actions**
+4. Merge your feature branch to `main` or `master`
+5. The GitHub Action will automatically build and deploy
+6. Your game will be live at: `https://scottymker.github.io/Funny-business/`
+
+**Manual Deployment:**
+
+If you prefer manual deployment:
+```bash
+npm run deploy
+```
+
+This will build and push to the `gh-pages` branch.
+
 ## 🔗 Links
 
-- 🎮 [Play the Game](#) (Coming soon!)
-- 🐛 [Report Issues](https://github.com/yourusername/elevator-escape-room/issues)
-- 💬 [Discussions](https://github.com/yourusername/elevator-escape-room/discussions)
+- 🎮 [Play the Game](https://scottymker.github.io/Funny-business/) (Live after merge to main)
+- 🐛 [Report Issues](https://github.com/scottymker/Funny-business/issues)
+- 💬 [Discussions](https://github.com/scottymker/Funny-business/discussions)
 
 ---
 
