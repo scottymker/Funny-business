@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { formatTime } from '../utils/gameLogic';
 import { achievements } from '../data/achievements';
 import './GameOver.css';

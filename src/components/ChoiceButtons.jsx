@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import './ChoiceButtons.css';
 
 function ChoiceButtons({ choices, onChoiceSelect, disabled }) {
