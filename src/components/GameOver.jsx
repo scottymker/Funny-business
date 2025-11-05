@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { formatTime } from '../utils/gameLogic';
+import { achievements } from '../data/achievements';
 import './GameOver.css';
 
 function GameOver({ gameState, onRestart }) {
@@ -84,7 +84,7 @@ function GameOver({ gameState, onRestart }) {
             <div className="achievement-list">
               {gameState.achievements.map(achievementId => {
                 // Find achievement data
-                const achievement = Object.values(require('../data/achievements').achievements)
+                const achievement = Object.values(achievements)
                   .find(a => a.id === achievementId);
                 return achievement ? (
                   <div key={achievementId} className="achievement-badge">

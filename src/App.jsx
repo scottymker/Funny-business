@@ -6,8 +6,7 @@ import {
   selectCharacter,
   selectScenario,
   processChoice,
-  checkAchievements,
-  formatTime
+  checkAchievements
 } from './utils/gameLogic';
 import ElevatorDisplay from './components/ElevatorDisplay';
 import FloorIndicator from './components/FloorIndicator';
@@ -49,7 +48,7 @@ function App() {
     }
 
     // Select new character
-    const character = selectCharacter(gameState.currentFloor);
+    const character = selectCharacter();
 
     if (!character) {
       // Empty elevator, just move down
@@ -93,7 +92,7 @@ function App() {
       currentCharacter: character,
       currentScenario: scenario
     }));
-  }, [gameState.currentFloor]);
+  }, [gameState]);
 
   // Initialize game
   const startGame = useCallback(() => {

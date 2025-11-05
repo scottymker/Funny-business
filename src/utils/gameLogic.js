@@ -29,13 +29,13 @@ export const initialGameState = {
   totalTime: 0
 };
 
-export function selectCharacter(currentFloor) {
+export function selectCharacter() {
   // Random chance to have someone in elevator
   if (Math.random() > 0.7) {
     return null; // Empty elevator
   }
 
-  const availableCharacters = Object.entries(characters).filter(([key, char]) => {
+  const availableCharacters = Object.entries(characters).filter(([_key, char]) => {
     return Math.random() < char.triggerChance;
   });
 
