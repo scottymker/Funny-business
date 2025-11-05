@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - claude/elevator-escape-room-setup-011CUncFUDCWuqBUFAGFUTQG
   workflow_dispatch:
 
 permissions:
